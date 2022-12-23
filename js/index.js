@@ -1,4 +1,4 @@
-const requestURL= "json/peliculas.json"
+const requestURL= "../json/peliculas.json";
 
 async function fetchMoviesJson(){
     const response = await fetch(requestURL);
@@ -22,11 +22,11 @@ fetchMoviesJson().then(movies => {
 
         
 
-            //moviesSection.innerHTML += `
-            //    ${director}
-            //`
+            moviesSection.innerHTML += `
+                ${director}
+            `
 
-            console.log (movies.peliculas[index].caratula);
+            console.log (movies.peliculas[index].director);
         
         };
 })
