@@ -1,5 +1,4 @@
-const requestURL = "../json/peliculas.json";
-
+const requestURL= "json/peliculas.json"
 
 async function fetchMoviesJson(){
     const response = await fetch(requestURL);
