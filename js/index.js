@@ -2,8 +2,7 @@ const requestURL = "../json/peliculas.json";
 
 
 async function fetchMoviesJson(){
-    const response = await fetch
-    (requestURL);
+    const response = await fetch(requestURL);
     const movies = await response.json();
     return movies;
 }
@@ -24,11 +23,11 @@ fetchMoviesJson().then(movies => {
 
         
 
-            moviesSection.innerHTML += `
-                ${director}
-            `
+            //moviesSection.innerHTML += `
+            //    ${director}
+            //`
 
-            console.log (movies.peliculas[index].id);
+            console.log (movies.peliculas[index].caratula);
         
         };
 })
